@@ -1,0 +1,694 @@
+/* Basic CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  scroll-behavior: smooth;
+  scroll-margin-top: 80px;
+}
+
+/* Body Styling */
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  position: fixed; /* Fix it to the top of the screen */
+  top: 0; /* Align it to the top */
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 2001;
+}
+
+/* Initial State: No background */
+.navigationContainer {
+  width: 100%; /* Ensure it spans the full width of the viewport */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* Spread brand and nav apart */
+  align-items: center; /* Center vertically */
+  background-color: transparent; /* No background initially */
+  transition: background-color 0.3s ease; /* Smooth transition for background */
+  padding: 20px 100px;
+  color: black;
+  height: 80px;
+}
+
+/* When scrolled down, background color will be applied */
+.navigationContainer.scrolled {
+  background-color: rgb(17, 17, 17); /* Background color when scrolled */
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  padding-top: 6px;
+}
+
+nav a {
+  color: rgb(29, 29, 29);
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+  transition: 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #b58f5f;
+}
+
+.brand {
+  display: flex;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  color: black;
+}
+
+li button {
+  color: #ffdbae;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+main {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  background-image: url("images/imageAI2.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.hero p {
+  max-width: 800px;
+  margin-bottom: 10px;
+}
+
+button {
+  border: 0;
+  font-size: 1.2rem;
+  padding: 15px 25px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  font-weight: 500;
+  border-radius: 15px;
+  transition: background-color 0.5s ease-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2b2b2b;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero h3 {
+  font-family: "Birthstone", cursive;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+
+.about {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.about .image {
+  width: 600px;
+  height: 600px;
+  background-image: url("images/cia.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.about .me {
+  width: 100%;
+}
+
+.about h2 {
+  color: #313131;
+}
+
+.about h1 {
+  font-family: "Birthstone", cursive;
+  color: #b58f5f;
+  font-size: 5rem;
+  line-height: 5rem;
+}
+
+.about .list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #313131;
+  margin-top: 20px;
+}
+
+.about .me p {
+  font-size: 1rem;
+}
+
+.about .list .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #313131;
+  gap: 20px;
+}
+
+.about .list .row .card {
+  width: 33%;
+  border-radius: 10px;
+  box-shadow: 0px 20px 26px rgba(0, 0, 0, 0.1);
+}
+
+.about .list .row .card p {
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.about p {
+  color: #464646;
+}
+
+.prices {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+}
+
+.prices .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.prices .card {
+  height: 300px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prices .card1 {
+  width: 33%;
+  height: 300px;
+  background-image: url("images/konsultation.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; /* Transition for smooth zoom */
+}
+
+.prices .card2 {
+  width: 33%;
+  height: 300px;
+  background-image: url("images/botox.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; /* Transition for smooth zoom */
+}
+
+.prices .card3 {
+  width: 33%;
+  height: 300px;
+  background-image: url("images/fillers.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; /* Transition for smooth zoom */
+}
+
+.prices .card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.prices .row h1 {
+  font-size: 2.6rem;
+  margin: 0;
+  padding: 0;
+  line-height: 3rem;
+  color: #000000;
+}
+
+.prices h1 {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  line-height: 3rem;
+  color: #b58f5f;
+}
+
+.prices h2 {
+  font-size: 1.3rem;
+  color: #313131;
+}
+
+.prices h3 {
+  font-size: 1rem;
+  color: #b58f5f;
+}
+
+.prices button {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+}
+
+.recensioner {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #141414;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 40px 10px 40px;
+  overflow: hidden;
+}
+
+.recensioner .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.recensioner .rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.recensioner .card h3 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.recensioner .card p {
+  color: #b58f5f;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center; /* Centers the content */
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  padding: 20px;
+  height: auto; /* Allows content to define height */
+  margin-bottom: 20px;
+}
+
+.swiper-slide img {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Style inactive bullets */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+/* Style active bullet */
+.swiper-pagination-bullet-active {
+  background-color: #b58f5f;
+  opacity: 1;
+  width: 14px; /* Slightly larger */
+  height: 14px;
+}
+
+footer {
+  width: 100%;
+  background-color: #141414;
+  margin: 0 auto;
+  color: white;
+  padding: 40px 40px 10px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #b58f5f;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: start;
+  margin: 0 auto;
+}
+
+footer .content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: gray;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 1200px) {
+  .navigationContainer {
+    padding: 10px 20px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .prices {
+    padding: 0px;
+  }
+  .prices .row h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+  .about .image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+  .about h2 {
+    font-size: 1.3rem;
+  }
+  .hero {
+    background-image: url("images/imageAIsmall3.png");
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero h3 {
+    font-size: 2.3rem;
+    font-weight: 500;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .prices {
+    padding: 10px;
+  }
+  .prices .row {
+    flex-direction: column;
+  }
+  .prices .card1 {
+    width: 100%;
+  }
+  .prices .card2 {
+    width: 100%;
+  }
+  .prices .card3 {
+    width: 100%;
+  }
+  .prices .card4 {
+    width: 100%;
+  }
+  .prices h1 {
+    font-size: 2rem;
+  }
+  .prices .row h1 {
+    font-size: 2rem;
+  }
+  footer .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .content {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about .list .row .card {
+    width: 100%;
+  }
+  .about .list .row {
+    flex-direction: column;
+  }
+  .navigationContainer {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  nav {
+    display: none; /* Hide default nav */
+  }
+  .ul {
+    flex-direction: column;
+  }
+
+  li button {
+    color: #ffdbae;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 35px;
+    position: relative;
+    z-index: 1001;
+  }
+
+  /* Hamburger Icon */
+  .hamburger-menu div {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px 0px;
+    transition: 0.4s;
+  }
+
+  /* Navigation Menu (Hidden Initially) */
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    text-align: center;
+    padding: 20px 20px;
+    transition: top 1s ease-in-out;
+  }
+
+  .mobile-nav ul {
+    list-style: none;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .mobile-nav ul li {
+    padding: 15px;
+  }
+
+  .mobile-nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  /* Slide Down Animation */
+  .mobile-nav.active {
+    display: block;
+    margin-top: 80px;
+    top: 0;
+  }
+
+  /* Transform Hamburger to X */
+  .hamburger-menu.active div:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+    background-color: #000000;
+  }
+
+  .hamburger-menu.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active div:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+    background-color: #000000;
+  }
+}
+
+@media (max-width: 418px) {
+  .container {
+    margin-top: 80px;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+  .hero p {
+    font-size: 0.8rem;
+  }
+  .me h1 {
+    font-size: 2rem;
+  }
+  .me h2 {
+    font-size: 1rem;
+  }
+}
+
+/* Define the keyframes for the continuous sliding effect */
+@keyframes scrollCarousel {
+  0% {
+    transform: translateX(0); /* Start from the leftmost position */
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Move to the left by half the total width of the carousel */
+  }
+}
