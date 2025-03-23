@@ -44,7 +44,7 @@ header {
   transition: background-color 0.3s ease; /* Smooth transition for background */
   padding: 20px 100px;
   color: black;
-  height: 80px;
+  height: 70px;
 }
 
 /* When scrolled down, background color will be applied */
@@ -76,7 +76,7 @@ nav a:hover {
 
 .brand {
   width: 180px;
-  height: 80px;
+  height: 70px;
   background-image: url("images/image.png");
   background-position: center;
   background-size: cover;
@@ -190,10 +190,11 @@ p {
 
 .about .image {
   width: 500px;
-  height: 700px;
+  height: 590px;
   background-image: url("images/cia.png");
   background-position: center;
   background-size: cover;
+  border-radius: 30px;
 }
 
 .about .me {
@@ -227,7 +228,7 @@ p {
 .about .list .row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: start;
   justify-content: space-evenly;
   color: #313131;
   gap: 20px;
@@ -253,6 +254,10 @@ p {
 
 .card .img {
   width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
   border-radius: 20px 20px 0px 0px;
 }
 
@@ -278,7 +283,7 @@ p {
   justify-content: start;
   align-items: center;
   padding: 20px;
-  gap: 20px;
+  gap: 30px;
 }
 
 .prices .card {
@@ -296,7 +301,7 @@ p {
 .prices .card1 {
   width: 33%;
   height: 300px;
-  background-image: url("images/konsultation.png");
+  background-image: url("images/konsultation2.png");
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -307,13 +312,13 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease-in-out; /* Transition for smooth zoom */
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out; /* Transition for smooth zoom */
 }
 
 .prices .card2 {
   width: 33%;
   height: 300px;
-  background-image: url("images/botox.png");
+  background-image: url("images/test2.png");
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -324,13 +329,13 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease-in-out; /* Transition for smooth zoom */
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out; /* Transition for smooth zoom */
 }
 
 .prices .card3 {
   width: 33%;
   height: 300px;
-  background-image: url("images/fillers.png");
+  background-image: url("images/fillers2.png");
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -341,7 +346,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.3s ease-in-out; /* Transition for smooth zoom */
+  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out; /* Transition for smooth zoom */
 }
 
 .prices .card1:hover,
@@ -349,6 +354,7 @@ p {
 .card3:hover,
 .card4:hover {
   transform: scale(1.05); /* Zoom effect on hover */
+  filter: grayscale(100%);
 }
 
 .prices .row h1 {
@@ -374,7 +380,7 @@ p {
 
 .prices h3 {
   font-size: 1rem;
-  color: #b58f5f;
+  color: #ffffff;
 }
 
 .prices button {
@@ -393,6 +399,7 @@ p {
   align-items: center;
   padding: 40px 40px 10px 40px;
   overflow: hidden;
+  margin: 50px 50px 50px 0px;
 }
 
 .recensioner .card {
@@ -520,7 +527,7 @@ footer .content {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 968px) {
   .about {
     flex-direction: column;
   }
@@ -530,6 +537,9 @@ footer .content {
     margin: 0 auto;
     border-radius: 50%;
   }
+}
+
+@media (max-width: 768px) {
   .about h2 {
     font-size: 1.3rem;
   }
