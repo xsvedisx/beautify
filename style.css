@@ -667,7 +667,7 @@ footer .content {
   /* Slide Down Animation */
   .mobile-nav.active {
     display: block;
-    margin-top: 80px;
+    margin-top: 70px;
     top: 0;
   }
 
