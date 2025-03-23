@@ -659,7 +659,7 @@ footer .content {
   }
 }
 
-@media (max-width: 418px) {
+@media (max-width: 478px) {
   .container {
     margin-top: 80px;
   }
