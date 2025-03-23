@@ -201,37 +201,6 @@
       <!-- Swiper JS -->
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper(".mySwiper", {
-          spaceBetween: 30, // Space between slides
-          freeMode: false,
-          pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-            clickable: true,
-          },
-          breakpoints: {
-            320: {
-              // Small screens (phones)
-              slidesPerView: 1,
-            },
-            768: {
-              // Tablets
-              slidesPerView: 2,
-            },
-            1024: {
-              // Laptops and desktops
-              slidesPerView: 3,
-            },
-            1440: {
-              // Larger screens
-              slidesPerView: 4,
-            },
-          },
-        });
-      </script>
-
       <section class="prices">
         <h1 id="behandlingar">Behandlingar</h1>
         <div class="row">
@@ -316,16 +285,7 @@
       </footer>
     </main>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const hamburger = document.getElementById("hamburger");
-        const mobileNav = document.getElementById("mobileNav");
-
-        hamburger.addEventListener("click", function () {
-          this.classList.toggle("active");
-          mobileNav.classList.toggle("active");
-        });
-      });
+    <script src="script.js">
     </script>
   </body>
 </html>
