@@ -245,8 +245,9 @@ p {
 }
 
 .about .list .row .card p {
-  font-size: 1.3rem;
-  color: rgb(58, 58, 58);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #313131;
   padding: 10px 20px;
 }
 
