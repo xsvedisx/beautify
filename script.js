@@ -31,7 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileNav = document.getElementById("mobileNav");
 
   hamburger.addEventListener("click", function () {
-    this.classList.toggle("active");
-    mobileNav.classList.toggle("active");
+    this.classList.toggle("active"); // Toggle the active state on the hamburger
+    mobileNav.classList.toggle("active"); // Toggle the active state on the mobileNav
   });
+});
+
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navigationContainer");
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
 });

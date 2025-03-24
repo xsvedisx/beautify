@@ -29,7 +29,6 @@ header {
   top: 0; /* Align it to the top */
   left: 0;
   right: 0;
-  background-color: white;
   z-index: 2001;
 }
 
@@ -49,7 +48,8 @@ header {
 
 /* When scrolled down, background color will be applied */
 .navigationContainer.scrolled {
-  background-color: rgb(17, 17, 17); /* Background color when scrolled */
+  background-color: rgb(255, 255, 255); /* Background color when scrolled */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
 }
 
 /* Navigation */
@@ -75,15 +75,17 @@ nav a:hover {
 }
 
 .brand {
-  width: 160px;
-  height: 60px;
-  background-image: url("images/image.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  display: flex;
-  font-size: 1.2rem;
-  color: rgb(0, 0, 0);
+  display: flex; /* Use flexbox to align elements horizontally */
+  align-items: center; /* Vertically center the items in the flex container */
+  font-family: "Dongle", sans-serif;
+  font-size: 2.5rem;
+  margin: 0;
+  color: rgb(26, 26, 26);
+  z-index: 3000;
+}
+
+.brand p {
+  font-size: 1rem;
 }
 
 ul {
@@ -113,7 +115,7 @@ main {
 
 .hero {
   width: 100%;
-  background-image: url("images/imageAI2.png");
+  background-image: url("images/imageAI.png");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -158,21 +160,30 @@ button:hover {
 }
 
 h1 {
-  color: rgb(255, 255, 255);
+  color: rgb(41, 41, 41);
   font-size: 3rem;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 .hero h3 {
-  font-family: "Birthstone", cursive;
-  font-size: 2.5rem;
+  display: flex; /* Use flexbox to align elements horizontally */
+  align-items: center; /* Vertically center the items in the flex container */
+  font-family: "Dongle", sans-serif;
+  font-size: 4rem;
   font-weight: 500;
-  color: rgb(255, 255, 255);
+  color: rgb(41, 41, 41);
+  line-height: 3rem;
+  margin: 0;
+}
+
+.hero h3 p {
+  color: rgb(58, 58, 58);
+  margin: 0;
 }
 
 p {
   font-size: 1.2rem;
-  color: rgb(255, 255, 255);
+  color: rgb(37, 37, 37);
 }
 
 .about {
@@ -207,7 +218,7 @@ p {
 
 .about h1 {
   font-family: "Birthstone", cursive;
-  color: #b58f5f;
+  color: #c79961;
   font-size: 5rem;
   line-height: 5rem;
 }
@@ -304,7 +315,7 @@ p {
 .prices .card1 {
   width: 33%;
   height: 300px;
-  background-image: url("images/konsultation2.png");
+  background-image: url("images/konsultation.png");
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -321,7 +332,7 @@ p {
 .prices .card2 {
   width: 33%;
   height: 300px;
-  background-image: url("images/test2.png");
+  background-image: url("images/botox.png");
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -338,7 +349,7 @@ p {
 .prices .card3 {
   width: 33%;
   height: 300px;
-  background-image: url("images/fillers2.png");
+  background-image: url("images/fillers.png");
   background-position: center;
   background-size: cover;
   background-repeat: none;
@@ -373,7 +384,7 @@ p {
   margin: 0;
   padding: 0;
   line-height: 3rem;
-  color: #b58f5f;
+  color: #2c2c2c;
 }
 
 .prices h2 {
@@ -516,7 +527,7 @@ footer .content {
 
 @media (max-width: 1200px) {
   .navigationContainer {
-    padding: 10px 20px;
+    padding: 20px 20px;
   }
   .container {
     padding: 20px;
@@ -540,6 +551,10 @@ footer .content {
     margin: 0 auto;
     border-radius: 50%;
   }
+  .hero {
+    background-position: 70% center; /* Moves it slightly left */
+    transition: background-position 0.5s ease-in-out;
+  }
 }
 
 @media (max-width: 768px) {
@@ -547,14 +562,14 @@ footer .content {
     font-size: 1.3rem;
   }
   .hero {
-    background-image: url("images/imageAIsmall3.png");
+    background-position: 70% center; /* Moves it slightly left */
+    transition: background-position 0.5s ease-in-out;
   }
   .hero h1 {
     font-size: 2.5rem;
   }
   .hero h3 {
-    font-size: 2.3rem;
-    font-weight: 500;
+    font-size: 2.5rem;
   }
   .hero p {
     font-size: 1rem;
@@ -590,19 +605,10 @@ footer .content {
   footer .content {
     margin-top: 20px;
   }
-}
-
-@media (max-width: 700px) {
-  .about .list .row .card {
-    width: 100%;
-  }
-  .about .list .row {
-    flex-direction: column;
-  }
   .navigationContainer {
     flex-direction: row;
     align-items: center;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 20px 0px 20px;
   }
   nav {
     display: none; /* Hide default nav */
@@ -670,7 +676,7 @@ footer .content {
   /* Slide Down Animation */
   .mobile-nav.active {
     display: block;
-    margin-top: 60px;
+    padding-top: 60px;
     top: 0;
   }
 
@@ -690,19 +696,25 @@ footer .content {
   }
 }
 
+@media (max-width: 700px) {
+  .about .list .row .card {
+    width: 100%;
+  }
+  .about .list .row {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 478px) {
   .container {
     margin-top: 80px;
   }
   .hero h1 {
-    font-size: 1.8rem;
-  }
-  .hero h3 {
-    font-size: 1.7rem;
-    font-weight: 500;
+    font-size: 2.2rem;
   }
   .hero p {
     font-size: 0.8rem;
+    display: none;
   }
   .me h1 {
     font-size: 4rem;
@@ -710,6 +722,12 @@ footer .content {
   }
   .me h2 {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 348px) {
+  .hero h1 {
+    font-size: 1.8rem;
   }
 }
 
