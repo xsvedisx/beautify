@@ -44,3 +44,14 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("scrolled");
   }
 });
+
+document
+  .getElementById("visaKonsultation")
+  .addEventListener("click", function () {
+    var content = document.getElementById("merKonsultation");
+    if (content.style.display === "none") {
+      content.style.display = "block"; // Show the content
+    } else {
+      content.style.display = "none"; // Hide the content
+    }
+  });

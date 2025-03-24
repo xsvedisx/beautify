@@ -360,14 +360,30 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out; /* Transition for smooth zoom */
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Transition for smooth zoom */
+}
+
+.prices .card4 {
+  width: 33%;
+  height: 300px;
+  background-image: url("images/profhilo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Transition for smooth zoom */
 }
 
 .prices .card1:hover,
 .card2:hover,
 .card3:hover,
 .card4:hover {
-  transform: scale(1.05); /* Zoom effect on hover */
   filter: grayscale(100%);
 }
 
@@ -376,7 +392,7 @@ p {
   margin: 0;
   padding: 0;
   line-height: 3rem;
-  color: #ffffff;
+  color: rgb(26, 26, 26);
 }
 
 .prices h1 {
@@ -389,12 +405,12 @@ p {
 
 .prices h2 {
   font-size: 1.3rem;
-  color: #ffffff;
+  color: rgb(26, 26, 26);
 }
 
 .prices h3 {
   font-size: 1rem;
-  color: #ffffff;
+  color: rgb(26, 26, 26);
 }
 
 .prices button {
@@ -546,8 +562,8 @@ footer .content {
     flex-direction: column;
   }
   .about .image {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
     margin: 0 auto;
     border-radius: 50%;
   }
@@ -693,6 +709,17 @@ footer .content {
   .hamburger-menu.active div:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
     background-color: #000000;
+  }
+  .about .list .row .card p {
+    font-size: 1.1rem;
+    line-height: 1.1rem;
+    font-weight: 600;
+    color: #313131;
+    padding: 20px 20px 5px 5px;
+    margin: 0;
+  }
+  .about .smalltext {
+    padding: 2px 27px;
   }
 }
 
