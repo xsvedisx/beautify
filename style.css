@@ -13,7 +13,7 @@ body {
   font-family: "Nunito", sans-serif;
   line-height: 1.6;
   background-color: #fff;
-  color: #333;
+  color: #2b2a2b;
 }
 
 /* Container */
@@ -42,7 +42,7 @@ header {
   background-color: transparent; /* No background initially */
   transition: background-color 0.3s ease; /* Smooth transition for background */
   padding: 20px 100px;
-  color: black;
+  color: #2b2a2b;
   height: 70px;
 }
 
@@ -60,7 +60,7 @@ nav {
 }
 
 nav a {
-  color: rgb(29, 29, 29);
+  color: #2b2a2b;
   font-weight: 500;
   text-decoration: none;
   border-radius: 5px;
@@ -71,7 +71,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #b58f5f;
+  color: #8a8100;
 }
 
 .brand {
@@ -80,7 +80,7 @@ nav a:hover {
   font-family: "Dongle", sans-serif;
   font-size: 2.5rem;
   margin: 0;
-  color: rgb(26, 26, 26);
+  color: #2b2a2b;
   z-index: 3000;
 }
 
@@ -99,7 +99,7 @@ ul {
 
 li {
   list-style-type: none;
-  color: black;
+  color: #2b2a2b;
 }
 
 li button {
@@ -115,7 +115,7 @@ main {
 
 .hero {
   width: 100%;
-  background-image: url("images/imageAI.png");
+  background: #f6eee4;
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -124,7 +124,8 @@ main {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  color: black;
+  color: #2b2a2b;
+  background-image: url("images/imageAI.png");
 }
 
 .container {
@@ -160,9 +161,11 @@ button:hover {
 }
 
 h1 {
-  color: #141414;
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+  color: #161616;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0px;
 }
 
 .hero h3 {
@@ -171,14 +174,20 @@ h1 {
   font-family: "Dongle", sans-serif;
   font-size: 4rem;
   font-weight: 500;
-  color: rgb(41, 41, 41);
+  color: #2b2a2b;
   line-height: 3rem;
   margin: 0;
 }
 
 .hero h3 p {
-  color: rgb(58, 58, 58);
+  color: #2b2a2b;
   margin: 0;
+}
+
+.hero p {
+  max-width: 500px;
+  font-size: 1.4rem;
+  color: rgb(37, 37, 37);
 }
 
 p {
@@ -202,7 +211,7 @@ p {
 .about .image {
   width: 500px;
   height: 560px;
-  background-image: url("images/cia.png");
+  background-image: url("images/ciaLanding.png");
   background-position: center;
   background-size: cover;
   border-radius: 30px;
@@ -213,14 +222,14 @@ p {
 }
 
 .about h2 {
-  color: #313131;
+  color: #424242;
 }
 
 .about h1 {
-  font-family: "Birthstone", cursive;
-  color: #c79961;
-  font-size: 5rem;
-  line-height: 5rem;
+  font-family: "Open Sans", serif;
+  color: #ceb051;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
 .about .list {
@@ -252,11 +261,11 @@ p {
 }
 
 .about .list .row .card p {
-  font-size: 1.1rem;
-  line-height: 1.1rem;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
   font-weight: 600;
-  color: #313131;
-  padding: 20px 10px 5px 20px;
+  color: #ceb051;
+  padding: 10px 0px;
   margin: 0;
 }
 
@@ -275,7 +284,6 @@ p {
 
 .about .smalltext {
   font-size: 0.9rem;
-  padding: 0px 20px;
   margin: 0;
 }
 
@@ -312,33 +320,23 @@ p {
   align-items: center;
 }
 
-.prices .card1 {
-  width: 33%;
-  height: 300px;
-  background-image: url("images/konsultation.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  padding: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out; /* Transition for smooth zoom */
+.prices .card1 h2,
+.prices .card2 h2,
+.prices .card3 h2,
+.prices .card4 h2 {
+  align-self: center;
 }
 
 .prices .card2 {
   width: 33%;
-  height: 300px;
+  height: 350px;
   background-image: url("images/botox.png");
   background-position: center;
   background-size: cover;
   background-repeat: none;
   padding: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -348,14 +346,14 @@ p {
 
 .prices .card3 {
   width: 33%;
-  height: 300px;
+  height: 350px;
   background-image: url("images/fillers.png");
   background-position: center;
   background-size: cover;
   background-repeat: none;
   padding: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -365,14 +363,14 @@ p {
 
 .prices .card4 {
   width: 33%;
-  height: 300px;
+  height: 350px;
   background-image: url("images/profhilo.png");
   background-position: center;
   background-size: cover;
   background-repeat: none;
   padding: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -404,8 +402,8 @@ p {
 }
 
 .prices h2 {
-  font-size: 1.3rem;
-  color: rgb(26, 26, 26);
+  align-self: flex-start; /* pin the heading to the left edge */
+  text-align: left;
 }
 
 .prices h3 {
@@ -456,7 +454,7 @@ p {
 }
 
 .recensioner .card p {
-  color: #b58f5f;
+  color: #ceb051;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -495,10 +493,69 @@ p {
 
 /* Style active bullet */
 .swiper-pagination-bullet-active {
-  background-color: #b58f5f;
+  background-color: #ceb051;
   opacity: 1;
   width: 14px; /* Slightly larger */
   height: 14px;
+}
+
+.faq {
+  max-width: 1500px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.accordion-item + .accordion-item {
+  border-top: 1px solid #e2e2e2;
+}
+
+.accordion-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 1.25rem 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  padding: 20px;
+  color: black;
+}
+
+.accordion-button:hover {
+  background-color: #f5ede3;
+}
+
+.accordion-button[aria-expanded="true"] .chevron {
+  transform: rotate(180deg);
+}
+
+.chevron {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.25s ease;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+
+.accordion-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+.accordion-panel p {
+  margin: 0 0 1rem;
+  padding-right: 2.25rem; /* keeps text clear of chevron */
+  padding: 30px;
+}
+
+.accordion-button:focus-visible {
+  outline: 2px solid #3b82f6; /* Tailwind ‘blue-500’ for clarity */
+  outline-offset: 2px;
 }
 
 footer {
@@ -520,7 +577,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #b58f5f;
+  color: #ceb051;
 }
 
 footer .container {
@@ -568,7 +625,7 @@ footer .content {
     border-radius: 50%;
   }
   .hero {
-    background-position: 70% center; /* Moves it slightly left */
+    background-position: 74% center; /* Moves it slightly left */
     transition: background-position 0.5s ease-in-out;
   }
 }
@@ -578,7 +635,7 @@ footer .content {
     font-size: 1.3rem;
   }
   .hero {
-    background-position: 70% center; /* Moves it slightly left */
+    background-position: 74% center; /* Moves it slightly left */
     transition: background-position 0.5s ease-in-out;
   }
   .hero h1 {
@@ -588,7 +645,7 @@ footer .content {
     font-size: 2.5rem;
   }
   .hero p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .prices {
     padding: 10px;
@@ -624,7 +681,7 @@ footer .content {
   .navigationContainer {
     flex-direction: row;
     align-items: center;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 10px 0px 10px;
   }
   nav {
     display: none; /* Hide default nav */
@@ -652,7 +709,7 @@ footer .content {
   /* Hamburger Icon */
   .hamburger-menu div {
     width: 25px;
-    height: 2px;
+    height: 3px;
     background-color: rgb(0, 0, 0);
     margin: 5px 0px;
     transition: 0.4s;
@@ -665,7 +722,7 @@ footer .content {
     top: -100%;
     left: 0;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: #f6eee4;
     color: #000000;
     text-align: center;
     padding: 10px 10px;
@@ -698,7 +755,7 @@ footer .content {
 
   /* Transform Hamburger to X */
   .hamburger-menu.active div:nth-child(1) {
-    transform: translateY(5px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
     background-color: #000000;
   }
 
@@ -709,17 +766,6 @@ footer .content {
   .hamburger-menu.active div:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
     background-color: #000000;
-  }
-  .about .list .row .card p {
-    font-size: 1.1rem;
-    line-height: 1.1rem;
-    font-weight: 600;
-    color: #313131;
-    padding: 20px 20px 5px 5px;
-    margin: 0;
-  }
-  .about .smalltext {
-    padding: 2px 27px;
   }
 }
 
@@ -737,7 +783,7 @@ footer .content {
     margin-top: 80px;
   }
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
   .me h1 {
     font-size: 4rem;
@@ -746,11 +792,15 @@ footer .content {
   .me h2 {
     font-size: 1rem;
   }
+  .about .list .row .card p {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
 }
 
 @media (max-width: 348px) {
-  .hero h1 {
-    font-size: 1.8rem;
+  .about h1 {
+    font-size: 3rem;
   }
 }
 

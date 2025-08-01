@@ -1,29 +1,32 @@
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 30, // Space between slides
-  freeMode: false,
-  pagination: {
-    el: ".swiper-pagination",
-    type: "fraction",
-    clickable: true,
-  },
-  breakpoints: {
-    320: {
-      // Small screens (phones)
-      slidesPerView: 1,
+document.addEventListener("DOMContentLoaded", () => {
+  /* one and only Swiper instance */
+  const swiper = new Swiper(".mySwiper", {
+    // --- visual options you had in the first block ---
+    spaceBetween: 30,
+    freeMode: false,
+
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+      1440: { slidesPerView: 4 },
     },
-    768: {
-      // Tablets
-      slidesPerView: 2,
+
+    // --- autoplay you added later ---
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
     },
-    1024: {
-      // Laptops and desktops
-      slidesPerView: 3,
+
+    // choose ONE pagination style – fraction *or* bullets
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction", // or "bullets"
+      clickable: true,
     },
-    1440: {
-      // Larger screens
-      slidesPerView: 4,
-    },
-  },
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -45,13 +48,26 @@ window.addEventListener("scroll", function () {
   }
 });
 
-document
-  .getElementById("visaKonsultation")
-  .addEventListener("click", function () {
-    var content = document.getElementById("merKonsultation");
-    if (content.style.display === "none") {
-      content.style.display = "block"; // Show the content
-    } else {
-      content.style.display = "none"; // Hide the content
-    }
+document.addEventListener("DOMContentLoaded", () => {
+  const accordionButtons = document.querySelectorAll(".accordion-button");
+
+  accordionButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const expanded = btn.getAttribute("aria-expanded") === "true";
+      // close any open item if you want "one-open-at-a-time" behaviour
+      accordionButtons.forEach((b) => {
+        b.setAttribute("aria-expanded", false);
+        b.nextElementSibling.style.maxHeight = null;
+      });
+
+      // then toggle the clicked one
+      btn.setAttribute("aria-expanded", !expanded);
+      const panel = btn.nextElementSibling;
+      if (!expanded) {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } else {
+        panel.style.maxHeight = null;
+      }
+    });
   });
+});
