@@ -633,6 +633,10 @@ footer .content {
     background-position: 74% center; /* Moves it slightly left */
     transition: background-position 0.5s ease-in-out;
   }
+  .prices .row {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -654,10 +658,6 @@ footer .content {
   }
   .prices {
     padding: 10px;
-  }
-  .prices .row {
-    flex-direction: column;
-    gap: 15px;
   }
   .prices .card1 {
     width: 100%;
