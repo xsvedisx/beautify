@@ -60,7 +60,7 @@ nav {
 }
 
 nav a {
-  color: #2b2a2b;
+  color: #0c0c0c;
   font-weight: 500;
   text-decoration: none;
   border-radius: 5px;
@@ -99,7 +99,7 @@ ul {
 
 li {
   list-style-type: none;
-  color: #2b2a2b;
+  color: #141414;
 }
 
 li button {
@@ -125,7 +125,7 @@ main {
   align-items: center;
   gap: 10px;
   color: #2b2a2b;
-  background-image: url("images/imageAI.png");
+  background-image: url("images/AIBG.png");
 }
 
 .container {
@@ -323,7 +323,7 @@ p {
 }
 
 .prices .card2 {
-  background: #e0b276;
+  background: #141414;
   color: white;
   width: 33%;
   padding: 50px;
@@ -371,6 +371,26 @@ p {
   margin-top: auto; /* Optional: push button to bottom */
 }
 
+.prices .card1 h2 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.prices .card1 h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.prices .card2 h2 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.prices .card2 h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
 .prices .row h1 {
   font-size: 2.5rem;
   margin: 0;
@@ -379,25 +399,23 @@ p {
 }
 
 .prices h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
   padding: 0;
-  line-height: 3rem;
-}
-
-.prices h2 {
-  font-size: 3rem;
-  line-height: 3rem;
-}
-
-.prices h3 {
-  font-size: 1rem;
+  line-height: 2.5rem;
 }
 
 .prices button {
   margin-top: 15px;
   font-size: 1.1rem;
   padding: 10px 20px;
+}
+
+.prices .bulletPoints {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .recensioner {
@@ -486,6 +504,10 @@ p {
   max-width: 1500px;
   margin: 4rem auto;
   padding: 0 1rem;
+}
+
+.faq h2 {
+  text-align: center;
 }
 
 .accordion-item + .accordion-item {
@@ -618,7 +640,7 @@ footer .content {
     font-size: 1.3rem;
   }
   .hero {
-    background-position: 74% center; /* Moves it slightly left */
+    background-position: 78.5% center; /* Moves it slightly left */
     transition: background-position 0.5s ease-in-out;
   }
   .hero h1 {
@@ -635,6 +657,7 @@ footer .content {
   }
   .prices .row {
     flex-direction: column;
+    gap: 15px;
   }
   .prices .card1 {
     width: 100%;
@@ -778,6 +801,22 @@ footer .content {
   .about .list .row .card p {
     font-size: 1.4rem;
     line-height: 1.4rem;
+  }
+  .prices .card1 h2 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .prices .card2 h2 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .prices .card1 h3 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+  .prices .card2 h3 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
   }
 }
 

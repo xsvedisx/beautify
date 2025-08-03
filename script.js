@@ -34,8 +34,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileNav = document.getElementById("mobileNav");
 
   hamburger.addEventListener("click", function () {
-    this.classList.toggle("active"); // Toggle the active state on the hamburger
-    mobileNav.classList.toggle("active"); // Toggle the active state on the mobileNav
+    this.classList.toggle("active");
+    mobileNav.classList.toggle("active");
+  });
+
+  // 👇 Close menu when any nav link is clicked
+  const navLinks = mobileNav.querySelectorAll("a"); // or use '.nav-link' if that’s your class
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      mobileNav.classList.remove("active");
+    });
   });
 });
 
