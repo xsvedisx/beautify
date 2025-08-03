@@ -164,7 +164,7 @@ h1 {
   font-family: "aileron", sans-serif;
   color: #161616;
   font-size: 4rem;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 0px;
 }
 
@@ -173,7 +173,7 @@ h1 {
   align-items: center; /* Vertically center the items in the flex container */
   font-family: "aileron", sans-serif;
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: 800;
   color: #2b2a2b;
   line-height: 3rem;
   margin: 0;
