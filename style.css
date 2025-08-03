@@ -637,6 +637,22 @@ footer .content {
     flex-direction: column;
     gap: 15px;
   }
+  .prices .card1 {
+    width: 100%;
+    padding: 30px;
+    font-size: 0.9rem;
+  }
+  .prices .card2 {
+    width: 100%;
+    padding: 30px;
+    font-size: 0.9rem;
+  }
+  .prices .card3 {
+    width: 100%;
+  }
+  .prices .card4 {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -658,22 +674,6 @@ footer .content {
   }
   .prices {
     padding: 10px;
-  }
-  .prices .card1 {
-    width: 100%;
-    padding: 30px;
-    font-size: 0.9rem;
-  }
-  .prices .card2 {
-    width: 100%;
-    padding: 30px;
-    font-size: 0.9rem;
-  }
-  .prices .card3 {
-    width: 100%;
-  }
-  .prices .card4 {
-    width: 100%;
   }
   .prices h1 {
     font-size: 2rem;
